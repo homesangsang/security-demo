@@ -1,0 +1,12 @@
+server:
+  port: 7777
+
+spring:
+  mvc:
+    static-path-pattern: /static/**
+  freemarker:
+    suffix: .html
+    template-loader-path: classpath:/templates
+    request-context-attribute: request
+
+

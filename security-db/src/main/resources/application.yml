@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/any?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
+
+  freemarker:
+    suffix: .html
+    request-context-attribute: request
+  mvc:
+    static-path-pattern: /static/**
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQLDialect
